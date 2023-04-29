@@ -245,7 +245,9 @@ button.normalBt {
     border-bottom-left-radius: 0;
 }
 
-
+footer {
+    margin: 0 2vw ;
+}
 
 
 /**/
