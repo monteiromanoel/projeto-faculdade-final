@@ -176,4 +176,76 @@ i {
     right: 10px;
 }
 
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(../images/bg-banner-nws-op40.png);
+    background-position: 30% 50%;
+    background-color: #325D7F;
+}
+
+#newsletter div {
+    padding: 0 50px;
+}
+
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #e8f6ea;
+}
+
+#newsletter span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffbd27;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+button.normalBt {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    transition: 0.4s;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+#newsletter button {
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+
 /**/
