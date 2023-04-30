@@ -11,16 +11,24 @@
 <body>
     
     <section id="header">
-        <a href="#"><img src="../images/pilha-de-livros-2.png" class="logo" alt="" style="height:150px; width: 150px"></a>
+        <a href="#"><img src="../images/logo-cropped.png" class="logo" alt="" style="height:100px; width: 150px; padding: 5px 0px 10px 0px;"></a>
         
         <div>
             <ul id="navbar">
                 <li> <a class="active" href="../html/index.html">Página Principal</a></li>
                 <li> <a href="../html/shop.html">Sobre Nós</a></li>
                 <li> <a href="../html/contact.html">Contato</a></li>
-                <li> <a href="../html/cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <li> <a href="../html/contact.html">Minha Conta</a></li>
+                <li id="lg-bag"> <a href="../html/cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
         </div>
+
+        <div id="mobile">
+            <a href="../html/cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
     </section>
     
     <section id="product1" class="section-p1">
@@ -100,18 +108,19 @@
             <p>Receba notícias e <span>ofertas especiais!</span></p>
         </div>
         <div class="form">
-            <input type="text" name="" id="" placeholder="Insira seu e-mail">
+            <input type="text" name="" id="" placeholder="Seu e-mail">
             <button class="normalBt">Enviar</button>
         </div>
     </section>
 
     <footer class="section-p1">
         <div class="col">
-            <img src="../images/pilha-de-livros-2.png" alt="" style="width: 100px;">
+            <img class="logo" src="../images/logo-cropped.png" alt="" style="width: 100px;">
             <h4>Contato:</h4>
             <p><strong>Endereço:</strong> Avenida dos Livros, 1234 - Bairro Leitura - Suzano/SP</p>
             <p><strong>Telefone: </strong>(11) 91234-5678 / (11)4144-1234</p>
             <p><strong>Horário: </strong>08:00 - 18:00, Seg - Sáb</p>
+            
             <div class="follow">
                 <h4>Siga-nos</h4>
                 <div class="icon">
@@ -122,6 +131,7 @@
                 </div>
             </div>
         </div>
+       
         <div class="col">
             <h4>Sobre</h4>
             <a href="#">Sobre nós</a>
@@ -130,6 +140,7 @@
             <a href="#">Termos e Condições</a>
             <a href="#">Entre em contato!</a>
         </div>
+       
         <div class="col">
             <h4>Minha Conta</h4>
             <a href="#">Entrar</a>
@@ -138,10 +149,16 @@
             <a href="#">Rastrear Encomenda</a>
             <a href="#">Ajuda</a>
         </div>
-        <div class="col">
-            <h4>Formas de Pagamento</h4>
-            
+        
+        <div class="col colPayment">
+            <p>Formas de Pagamento</p>
+            <img src="../images/payment-method.jpg" alt="">
         </div>
+
+        <div class="copyright">
+            <p>	&copy; 2023, Manoel - Todos os Direitos Reservados ao Sebo Livros Mais</p>
+        </div>
+
     </footer>
 
     <script src="../script/script.js"></script>
