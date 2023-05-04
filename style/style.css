@@ -464,9 +464,9 @@ footer .copyright > p {
         flex-direction: column;
     }
 
-    #proDetails > .single-pro-image {
-        width: 100%;
-        margin: 0px;
+    #proDetails .single-pro-image {
+        min-width: 80%;
+        margin: 0;
     }
 
     #proDetails .single-pro-details {
@@ -477,6 +477,26 @@ footer .copyright > p {
     #proDetails .single-pro-details button {
         margin-top: 5px;
         font-size: 18px;
+    }
+
+    /*About Page*/
+    #about-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-head img {
+        min-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #about-head div {
+        padding-left: 0;
+    }
+
+    #main-spacing {
+        padding: 0;
     }
 
 }
@@ -547,4 +567,44 @@ footer .copyright > p {
 
 #proDetails .single-pro-details span {
     line-height: 25px;
+}
+
+/*About Page*/
+
+#page-spacing {
+    padding: 0 40px;
+}
+
+#page-header {
+    background-image: url(../images/banner-v1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2 {
+    color: white;
+}
+#page-header p {
+    color: white;
+    font-weight: 500;
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head img {
+    width: 50%;
+    height: auto;
+}
+
+#about-head div {
+    padding-left: 40px;
 }
