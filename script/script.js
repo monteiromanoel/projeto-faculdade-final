@@ -15,3 +15,7 @@ if (close) {
         nav.classList.remove('active');
     })
 }
+
+function msgCart() {
+    window.alert("Produto Adicionado ao Carrinho!")
+}
