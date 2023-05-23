@@ -26,6 +26,16 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+/*--- DARK THEME VARIABLES ---*/
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0,0,0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -264,7 +274,7 @@ main .insights div:hover {
     box-shadow: none;
 }
 
-main .insights div span {
+main .insights > div span {
     background: var(--color-primary);
     padding: 0.5rem;
     border-radius: 50%;
@@ -272,15 +282,15 @@ main .insights div span {
     font-size: 2rem;
 }
 
-main .insights div.expenses span {
+main .insights > div.expenses span {
     background: var(--color-danger);
 }
 
-main .insights div.income span {
+main .insights > div.income span {
     background: var(--color-success);
 }
 
-ain .insights div.middle {
+ain .insights > div.middle {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -296,6 +306,7 @@ main .insights .progress {
     width: 92px;
     height: 92px;
     border-radius: 50%;
+    margin: 0;
 }
 
 main .insights svg {
@@ -566,9 +577,9 @@ main table {
 
     main .recent-orders {
         width: 94%;
-        position: relative;
+        position: absolute;
         left: 50%;
-        transform: translate(-50%);
+        transform: translateX(-50%);
         margin: 2rem 0 0 8.8rem;
     }
 
@@ -576,7 +587,19 @@ main table {
         width: 83vw;
     }
 
+    main table thead tr th:last-child, 
+    main table thead tr th:first-child {
+        display: none;
+    }
+
+    main table tbody tr td:last-child, 
+    main table tbody tr td:first-child {
+        display: none;
+    }
+
 }
+
+
 
 
 
