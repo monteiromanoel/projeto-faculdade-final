@@ -20,8 +20,7 @@ function msgCart() {
     window.alert("Produto Adicionado ao Carrinho!")
 }
 
-function signUp() {
-    const enterArea = document.getElementById("enterArea");
-    enterArea.style.display = "none";
+function registerOk() {
+    window.alert("Cadastro efetuado com sucesso!");
 }
 

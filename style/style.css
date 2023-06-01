@@ -694,20 +694,23 @@ footer .copyright > p {
 }
 
 /* --- REGISTER PAGE --- */
-.register {
+
+
+.register{
     display: flex;
     margin: 30px auto 30px auto;
     width: fit-content;
-}
-
-.signIn {
-    display: flex;
-}
-
-.register > .signIn > form {
-    display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.clientData {
+    display: flex;
+    margin: 30px auto 30px auto;
+    width: auto;
+    align-items: start;
+    flex-direction: row;
+    gap: 8px;
 }
 
 .register > .signIn > form > h3 {
@@ -715,9 +718,8 @@ footer .copyright > p {
     color: rgb(40, 40, 40);
 }
 
-.register > .signIn > form > div > .inputEmail {
+.register > .signIn > form > div > input {
     color: #555;
-    display: flex;
     padding: 2px;
     margin: 10px auto 10px auto;
     justify-content: center;
@@ -725,17 +727,7 @@ footer .copyright > p {
     font-size: 16px;
 }
 
-.register > .signIn > form > div > #inputPass {
-    color: #555;
-    display: flex;
-    padding: 2px;
-    margin: 10px auto 10px auto;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-}
-
-input[id="inputEmail"], input[class="inputEmail"] {
+input[id="inputEmail"], input[class="inputEmail"], input[type="password"], input[class="clientData"] {
     border: 1px solid rgb(217, 214, 214);
     border-radius: 5px;
     width: 250px;
@@ -747,35 +739,15 @@ input[id="inputEmail"], input[class="inputEmail"] {
     box-shadow: none;
 }
 
-input[id="inputEmail"]:hover, input[class="inputEmail"]:hover  {
+input[id="inputEmail"]:hover, input[class="inputEmail"]:hover, input[type="password"]:hover  {
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.06);
 }
 
-input[id="inputEmail"]::placeholder, input[class="inputEmail"]::placeholder {
+input[id="inputEmail"]::placeholder, input[class="inputEmail"]::placeholder, input[type="password"]::placeholder {
     color: #bbb;
 }
 
-input[type="password"] {
-    border: 1px solid rgb(217, 214, 214);
-    border-radius: 5px;
-    width: 250px;
-    background-color: transparent;
-    margin: 0;
-    padding: 7px 8px;
-    font-size: 14px;
-    color: inherit;
-    box-shadow: none;
-}
-
-input[type="password"]:hover {
-    box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.06);
-}
-
-input[type="password"]::placeholder {
-    color: #bbb;
-}
-
-.register > .signIn > form > div > button {
+.registerBt {
     background-color: #088178;
     color: white;
     padding: 12px 20px;
@@ -791,7 +763,33 @@ input[type="password"]::placeholder {
     font-weight: 800;
 }
 
+.clientAddNumber {
+    border: 1px solid rgb(217, 214, 214);
+    border-radius: 5px;
+    width: 50px;
+    background-color: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    box-shadow: none;
+}
 
+.register > .registerData > form > h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+select {
+    border: 1px solid rgb(217, 214, 214);
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    box-shadow: none;
+}
 
 /*Start Media Query*/
 

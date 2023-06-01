@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <title>Cadastro</title>
+    <title>Entrar</title>
 </head>
 <body>
     
@@ -32,67 +32,23 @@
     </section>
 
     <section class="register">
-        <div class="registerData" id="registerArea" >
-            <form action="">
-                <h3>Bem Vindo(a), Insira seus dados para cadastro:</h3>
-                <h4>Dados Pessoais</h4>
-                <div class="clientData">
-                    <span>Insira seu E-mail: </span><input type="text" class="clientData">
+        <div class="signIn">
+            <form action="" id="enterArea">
+                <h3>
+                    Olá! Acesse sua conta:
+                </h3>
+                <div>
+                    <span>Digite seu E-mail: </span><input type="text" id="inputEmail" class="inputEmail">
                 </div>
-                <div class="clientData">
-                    <span>Insira seu Nome: </span><input type="text" class="clientData">
-                </div>
-                <div class="clientData">
-                    <span>Insira seu CPF: </span><input type="text" class="clientData">
-                </div>
-                <h4>Endereço</h4>
-                <div class="clientData">
-                    <span>Insira seu CEP: </span><input type="text" class="clientData"><a href="https://buscacepinter.correios.com.br/app/endereco/index.php" target="_blank" title="Esqueci meu CEP"><i class="fas fa-question-circle"></i></a>
-                </div>
-                <div class="clientData">
-                    <span>Logradouro: </span><input type="text" class="clientData"> <span>Nº: </span><input type="text" class="clientAddNumber">
-                </div>
-                <div class="clientData">
-                    <span>Bairro: </span><input type="text" class="clientData"> <span>Cidade: </span><input type="text" class="clientData">
-                </div>
-                <div class="clientData">
-                    <span>Estado: </span> <select id="UF" name="UF">
-                        <option value="">Selecione</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espirito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
+                <div>
+                    <span>Digite sua Senha: </span><input type="password" id="inputPass" placeholder="********"> 
                 </div>
             </form>
+            <div>
+                <button class="registerBt">Entrar</button>
+                <a href="register.html"><button class="registerBt">Cadastrar</button></a>
+            </div>
         </div>
-                <div>
-                    <a href="enter.html"><button class="registerBt">Entrar</button></a>
-                    <button class="registerBt" onClick="registerOk()">Criar Conta</button>
-                </div>
     </section>
 
 
