@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Entrar / Cadastro</title>
+</head>
+<body>
+    
+    <section id="header">
+        <a href="index.html"><img src="../images/logo-cropped.png" class="logo" alt="" style="height:100px; width: 150px; padding: 5px 0px 10px 0px;"></a>
+        
+        <div>
+            <ul id="navbar">
+                <li> <a class="active" href="../html/index.html">Loja</a></li>
+                <li> <a href="../html/about.html">Sobre Nós</a></li>
+                <li> <a href="../html/contact.html">Contato</a></li>
+                <li> <a href="../html/contact.html">Entrar / Criar Conta</a></li>
+                <li id="lg-bag"> <a href="../html/cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <a href="../html/cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+    </section>
+
+    <section class="register">
+        <div class="signIn" id="enterArea">
+            <form action="">
+                <h3>
+                    Olá! Acesse sua conta:
+                </h3>
+                <div>
+                    <span>Digite seu E-mail: </span><input type="text" id="inputEmail" class="inputEmail">
+                </div>
+                <div>
+                    <span>Digite sua Senha: </span><input type="password" id="inputPass" placeholder="********"> 
+                </div>
+                <div>
+                    <button id="enterBt" >Entrar</button>
+                    <button id="registerBt" onClick="signUp()">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="registerData">
+            <form action="">
+                <h3>Bem Vindo(a), Insira seus dados para cadastro:</h3>
+                <h3>Dados Pessoais</h3>
+                <div>
+                    <span>Insira seu E-mail: </span><input type="text">
+                </div>
+                <div>
+                    <span>Insira seu Nome: </span><input type="text">
+                </div>
+                <div>
+                    <span>Insira seu CPF: </span><input type="text">
+                </div>
+                <h4>Endereço</h4>
+                <div>
+                    <span>Insira seu CEP: </span><input type="text"><a href="https://buscacepinter.correios.com.br/app/endereco/index.php" title="Esqueci meu CEP"><i class="fas fa-question-circle"></i></a>
+                </div>
+                <div>
+                    <span>Logradouro: </span><input type="text"> <span>Nº: </span><input type="text">
+                </div>
+                <div>
+                    <span>Bairro: </span><input type="text"> <span>Cidade: </span><input type="text">
+                </div>
+                <div>
+                    <span>Estado: </span> <select id="UF" name="UF">
+                        <option value="">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Receba novidades por e-mail</h4>
+            <p>Receba notícias e <span>ofertas especiais!</span></p>
+        </div>
+        <div class="form">
+            <input type="text" name="" id="" placeholder="Seu e-mail">
+            <button class="normalBt">Enviar</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../images/logo-cropped.png" alt="" style="width: 100px;">
+            <h4>Contato:</h4>
+            <p><strong>Endereço:</strong> R. Afonso Sardinha, 201 - Lapa, São Paulo - SP, 05076-000</p>
+            <p><strong>Telefone: </strong>(11) 91234-5678 / (11)4144-1234</p>
+            <p><strong>Horário: </strong>08:00 - 18:00, Seg - Sáb</p>
+            
+            <div class="follow">
+                <h4>Siga-nos</h4>
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+       
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Sobre nós</a>
+            <a href="#">Informações de entrega</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos e Condições</a>
+            <a href="#">Entre em contato!</a>
+        </div>
+       
+        <div class="col">
+            <h4>Minha Conta</h4>
+            <a href="#">Entrar</a>
+            <a href="#">Ver Carrinho</a>
+            <a href="#">Lista de Desejos</a>
+            <a href="#">Rastrear Encomenda</a>
+            <a href="#">Ajuda</a>
+        </div>
+        
+        <div class="col colPayment">
+            <p>Formas de Pagamento</p>
+            <img src="../images/payment-method.jpg" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>	&copy; 2023, Manoel - Todos os Direitos Reservados ao Sebo Livros Mais</p>
+        </div>
+
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

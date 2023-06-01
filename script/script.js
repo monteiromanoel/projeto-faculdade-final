@@ -19,3 +19,9 @@ if (close) {
 function msgCart() {
     window.alert("Produto Adicionado ao Carrinho!")
 }
+
+function signUp() {
+    const enterArea = document.getElementById("enterArea");
+    enterArea.style.display = "none";
+}
+
