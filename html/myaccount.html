@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <title>Entrar</title>
+    <title>Minha Conta</title>
 </head>
 <body>
     
@@ -31,26 +31,69 @@
 
     </section>
 
-    <section class="register">
-        <div class="signIn">
-            <form action="" id="enterArea">
-                <h3>
-                    Olá! Acesse sua conta:
-                </h3>
-                <div>
-                    <span>Digite seu E-mail: </span><input type="text" id="inputEmail" class="inputEmail">
-                </div>
-                <div>
-                    <span>Digite sua Senha: </span><input type="password" id="inputPass" placeholder="********"> 
-                </div>
-            </form>
-            <div class="divBt">
-                <button class="registerBt">Entrar</button>
-                <a href="register.html"><button class="registerBt">Cadastrar</button></a>
+    <section class="clientInformation">
+        <form action="">
+            <h1 class="clientTitleH1">Bem Vindo(a), </h1> <h2 class="clientTitleH2">Manoel!</h2>
+            <div>
+                <span><strong>Nome: </strong></span> <span>Manoel Monteiro de Castro</span>
             </div>
-        </div>
-    </section>
+            <div>
+                <span><strong>CPF: </strong></span> <span>35*******-54</span> <br>
+                <span><strong>RG: </strong></span> <span>40******-0</span>
+            </div>
+            <div>
+                <span><strong>Telefone para Contato: </strong></span> <span>(11)91234-5678</span>
+            </div>
+            <div>
+                <span><strong>Endereço: </strong></span> <span>Rua dos Livros, 123. Centro - Suzano/SP.</span> 
+                <br>
+                <span><strong>CEP: </strong>12345-6785</span> 
+            </div>
+            <div>
+                <h3 class="clientTitleH3">Dados de Pagamento</h3>
 
+            </div>
+
+
+
+
+
+            <div class="clientInfo">
+                <h3 class="clientTitleH3">Compras Recentes</h3>
+                <table class="clientTableInfo">
+                    <thead>
+                        <tr>
+                            <td>Id da Compra</td>
+                            <td>SKU Produto</td>
+                            <td>Nome do Produto</td>
+                            <td>Data da Compra</td>
+                            <td>Status da Compra</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#065</td>
+                            <td>213</td>
+                            <td>Box Trilogia Sprawl</td>
+                            <td>12/05/2023</td>
+                            <td>Concluída</td>
+                            <td><button>Ver Detalhes</button></td>
+                        </tr>
+                        <tr>
+                            <td>#068</td>
+                            <td>086</td>
+                            <td>Fundação</td>
+                            <td>02/06/2023</td>
+                            <td>A Enviar</td>
+                            <td><button>Ver Detalhes</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+
+    </section>
 
 
     <section id="newsletter" class="section-p1 section-m1">
