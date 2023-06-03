@@ -15,10 +15,10 @@
         
         <div>
             <ul id="navbar">
-                <li> <a class="active" href="../html/index.html">Loja</a></li>
+                <li> <a href="../html/index.html">Loja</a></li>
                 <li> <a href="../html/about.html">Sobre Nós</a></li>
                 <li> <a href="../html/contact.html">Contato</a></li>
-                <li> <a href="../html/enter.html">Entrar / Criar Conta</a></li>
+                <li> <a class="active" href="../html/myaccount.html">Minha Conta</a></li>
                 <li id="lg-bag"> <a href="../html/cart.html"><i class="fas fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
@@ -33,30 +33,28 @@
 
     <section class="clientInformation">
         <form action="">
-            <h1 class="clientTitleH1">Bem Vindo(a), </h1> <h2 class="clientTitleH2">Manoel!</h2>
+            <h1 class="clientTitleH1">Bem Vindo(a), Manoel!</h1>
             <div>
-                <span><strong>Nome: </strong></span> <span>Manoel Monteiro de Castro</span>
-            </div>
-            <div>
-                <span><strong>CPF: </strong></span> <span>35*******-54</span> <br>
-                <span><strong>RG: </strong></span> <span>40******-0</span>
-            </div>
-            <div>
-                <span><strong>Telefone para Contato: </strong></span> <span>(11)91234-5678</span>
-            </div>
-            <div>
-                <span><strong>Endereço: </strong></span> <span>Rua dos Livros, 123. Centro - Suzano/SP.</span> 
-                <br>
-                <span><strong>CEP: </strong>12345-6785</span> 
-            </div>
-            <div>
-                <h3 class="clientTitleH3">Dados de Pagamento</h3>
-
-            </div>
-
+                <div>
+                    <span><strong>Nome: </strong></span> <span>Manoel Monteiro de Castro</span>
+                </div>
+                <div>
+                    <span><strong>CPF: </strong></span> <span>35*******-54</span> <br>
+                    <span><strong>RG: </strong></span> <span>40******-0</span><br>
+                    <span><strong>Data Nasc.: </strong></span> <span>28/02/1996</span>
+                </div>
+                <div>
+                    <span><strong>Telefone para Contato: </strong></span> <span>(11)91234-5678</span>
+                </div>
+                <div>
+                    <span><strong>Endereço: </strong></span> <span>Rua dos Livros, 123. Centro - Suzano/SP.</span>
+                    <br>
+                    <span><strong>CEP: </strong>12345-6785</span>
+                </div>
+                <button class="detailsBt" id="buttonEdit">Editar Informações</button>
 
 
-
+            </div>
 
             <div class="clientInfo">
                 <h3 class="clientTitleH3">Compras Recentes</h3>
@@ -77,16 +75,16 @@
                             <td>213</td>
                             <td>Box Trilogia Sprawl</td>
                             <td>12/05/2023</td>
-                            <td>Concluída</td>
-                            <td><button>Ver Detalhes</button></td>
+                            <td class="sucess">Concluída</td>
+                            <td><button class="detailsBt">Ver Detalhes</button></td>
                         </tr>
                         <tr>
                             <td>#068</td>
                             <td>086</td>
                             <td>Fundação</td>
                             <td>02/06/2023</td>
-                            <td>A Enviar</td>
-                            <td><button>Ver Detalhes</button></td>
+                            <td class="pending">A Enviar</td>
+                            <td><button class="detailsBt">Ver Detalhes</button></td>
                         </tr>
                     </tbody>
                 </table>
