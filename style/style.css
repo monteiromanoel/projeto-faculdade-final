@@ -745,6 +745,16 @@ input[id="inputEmail"]:hover, input[class="inputEmail"]:hover, input[type="passw
     box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.06);
 }
 
+* input::placeholder {
+    color: #bbb
+}
+
+input[id="inputEmail"]:focus {
+    outline: 0;
+}
+
+
+
 input[id="inputEmail"]::placeholder, input[class="inputEmail"]::placeholder, input[type="password"]::placeholder {
     color: #bbb;
 }
@@ -809,7 +819,9 @@ select {
     justify-content: center;
 }
 
-
+#inputPass {
+    padding-left: 10px;
+}
 
 .clientTitleH1{
     color: #363949;
@@ -878,7 +890,7 @@ select {
     border-bottom: 1px solid rgba(0, 0, 0, 0.158);
 }
 
-.sucess {
+.success {
     color: #41f1b6;
 }
 
@@ -1143,7 +1155,7 @@ input[type="search"]::placeholder {
     color: #bbb;
 }
 
-button[type="submit"] {
+button[class="searchBt"] {
     text-indent: -999px;
     overflow: hidden;
     width: 40px;
@@ -1156,14 +1168,35 @@ button[type="submit"] {
     opacity: 0.7;
   }
   
-  button[type="submit"]:hover {
+  button[class="searchBt"]:hover {
     opacity: 1;
   }
 
-  button[type="submit"]:focus,
+  button[class="searchBt"]:focus,
 input[type="search"]:focus {
   box-shadow: 0 0 3px 0 #1183d6;
   border-color: #1183d6;
   outline: none;
 }
 
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+.input-control span {
+    color: black;
+}

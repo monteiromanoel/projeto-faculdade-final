@@ -37,17 +37,20 @@
                 <h3>
                     Olá! Acesse sua conta:
                 </h3>
-                <div>
-                    <span>Digite seu E-mail: </span><input type="text" id="inputEmail" class="inputEmail">
+                <div class="input-control">
+                    <span>Digite seu E-mail: </span><input type="text" id="inputEmail" class="inputEmail" required maxlength="45">
+                    <div class="error"></div>
                 </div>
-                <div>
-                    <span>Digite sua Senha: </span><input type="password" id="inputPass" placeholder="  ********"> 
+                <div class="input-control">
+                    <span>Digite sua Senha: </span><input type="password" id="inputPass" placeholder="********" required maxlength="20"> 
+                    <div class="error"></div>
+                </div>
+                <div class="divBt">
+                    <a href="#"><button class="registerBt" type="submit">Entrar</button></a>
+                    <a href="register.html"><button class="registerBt">Cadastrar</button></a>
                 </div>
             </form>
-            <div class="divBt">
-                <a href="indexLogged.html"><button class="registerBt">Entrar</button></a>
-                <a href="register.html"><button class="registerBt">Cadastrar</button></a>
-            </div>
+            
         </div>
     </section>
 
@@ -113,5 +116,6 @@
     </footer>
 
     <script src="../script/script.js"></script>
+
 </body>
 </html>
