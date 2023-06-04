@@ -20,7 +20,7 @@ function msgCart() {
     window.alert("Produto Adicionado ao Carrinho!")
 }
 
-/*------- VALIDATION AREA -------*/
+/*------- VALIDATION AREA ENTER PAGE -------*/
 
 const formEnter = document.getElementById('enterArea');
 const emailEnter = document.getElementById("inputEmail");
@@ -30,7 +30,7 @@ formEnter.addEventListener('submit', e => {
     e.preventDefault();
 
     validateInputs();
-    });
+});
 
 const setError = (element, message) => {
     const inputControl = element.parentElement;
@@ -39,7 +39,7 @@ const setError = (element, message) => {
     errorDisplay.innerText = message;
     inputControl.classList.add('error');
     inputControl.classList.remove('success')
-    };
+};
 
 const setSuccess = element => {
     const inputControl = element.parentElement;
@@ -48,16 +48,16 @@ const setSuccess = element => {
     errorDisplay.innerText = '';
     inputControl.classList.add('success');
     inputControl.classList.remove('error');
-    };
+};
 
 const isValidEmail = email => {
     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(email).toLowerCase());
-    };
+};
 
 function openPage() {
     window.location.href = "../html/indexLogged.html"
-    }
+};
 
 const validateInputs = () => {
     const emailEnterValue = emailEnter.value.trim();
@@ -86,6 +86,8 @@ const validateInputs = () => {
             }
 };
 
+/*------- VALIDATION AREA REGISTER PAGE -------*/
+
 const registerArea = document.getElementById("formRegister");
 const registerEmail  = document.getElementById("userEmail");
 const registerPass1 = document.getElementById("password1");
@@ -95,7 +97,63 @@ const registerCpf = document.getElementById("clientCpf");
 const registerRg = document.getElementById("clientRg");
 const registerBirth = document.getElementById("clientBirth");
 const registerPhone = document.getElementById("clientPhone");
-const registerCEP = document.getElementById("clientCep");
+const registerCep = document.getElementById("clientCep");
+
+registerArea.addEventListener('submit', e => {
+    e.preventDefault();
+
+    validateInputs();
+});
+
+const isValidEmail2 = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+};
+
+const validateInputsRegister = () => {
+    const registerEmailValue = registerEmail.value.trim();
+    const registerPass1Value = registerPass1.value.trim();
+    const registerPass2Value = registerPass2.value.trim();
+    const registerNameValue = registerName.value.trim();
+    const registerCpfValue = registerCpf.value.trim();
+    const registerRgValue = registerRg.value.trim();
+    const registerBirthValue = registerBirth.value.trim();
+    const registerPhoneValue = registerPhone.value.trim();
+    const registerCepValue = registerCep.value.trim();
+    const standardName = /[^a-zà-ú]/gi;
+
+
+    if (registerEmailValue === "") {
+        setError(registerEmail, "Insira seu e-mail");
+    } else if (!isValidEmail2(registerEmailValue)) {
+        setError(registerEmail, "Insira um e-mail válido");
+    } else {
+        setSuccess(registerEmail);
+    };
+
+    if (registerPass1Value === "") {
+        setError(registerPass1, "Insira uma senha");
+    } else if (registerPass1.length < 8) {
+        setError(registerPass1, "A senha deve ter no mínimo 8 caracteres");
+    } else {
+        setSuccess(registerPass1);
+    };
+
+    if (registerPass2Value === "") {
+        setError(registerPass2, "Por favor, confirme sua senha");
+    } else if (registerPass2 !== registerPass1) {
+        setError(registerPass2, "As senhas não coincidem");
+    } else {
+        setSuccess(registerPass2);
+    };
+
+    if (registerNameValue === "") {
+        setError(registerName, "Insira seu nome e sobrenome");
+    } else {
+        setSuccess(registerName);
+    };
+
+};
 
 
 
