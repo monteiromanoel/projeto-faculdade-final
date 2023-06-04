@@ -53,6 +53,10 @@ const formEnter = document.getElementById('enterArea');
             return re.test(String(email).toLowerCase());
         };
 
+        function openPage() {
+            window.location.href = "../html/indexLogged.html"
+        }
+
         const validateInputs = () => {
             const emailEnterValue = emailEnter.value.trim();
             const passEnterValue = passEnter.value.trim();
@@ -74,7 +78,7 @@ const formEnter = document.getElementById('enterArea');
             }
 
             if (emailEnterValue == "manoel.livros@email.com" && passEnterValue == "12345678") {
-                window.open("https://www.google.com.br");
+                openPage();
             } else {
                 setError(passEnter, "Usuário ou senha inválidos");
             }
