@@ -20,69 +20,86 @@ function msgCart() {
     window.alert("Produto Adicionado ao Carrinho!")
 }
 
+/*------- VALIDATION AREA -------*/
+
 const formEnter = document.getElementById('enterArea');
-        const emailEnter = document.getElementById("inputEmail");
-        const passEnter = document.getElementById("inputPass");
+const emailEnter = document.getElementById("inputEmail");
+const passEnter = document.getElementById("inputPass");
 
-        formEnter.addEventListener('submit', e => {
-            e.preventDefault();
+formEnter.addEventListener('submit', e => {
+    e.preventDefault();
 
-            validateInputs();
-        });
+    validateInputs();
+    });
 
-        const setError = (element, message) => {
-            const inputControl = element.parentElement;
-            const errorDisplay = inputControl.querySelector('.error');
+const setError = (element, message) => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
 
-            errorDisplay.innerText = message;
-         inputControl.classList.add('error');
-            inputControl.classList.remove('success')
-        };
+    errorDisplay.innerText = message;
+    inputControl.classList.add('error');
+    inputControl.classList.remove('success')
+    };
 
-        const setSuccess = element => {
-            const inputControl = element.parentElement;
-            const errorDisplay = inputControl.querySelector('.error');
+const setSuccess = element => {
+    const inputControl = element.parentElement;
+    const errorDisplay = inputControl.querySelector('.error');
 
-            errorDisplay.innerText = '';
-            inputControl.classList.add('success');
-            inputControl.classList.remove('error');
-        };
+    errorDisplay.innerText = '';
+    inputControl.classList.add('success');
+    inputControl.classList.remove('error');
+    };
 
-        const isValidEmail = email => {
-            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(String(email).toLowerCase());
-        };
+const isValidEmail = email => {
+    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+    };
 
-        function openPage() {
-            window.location.href = "../html/indexLogged.html"
+function openPage() {
+    window.location.href = "../html/indexLogged.html"
+    }
+
+const validateInputs = () => {
+    const emailEnterValue = emailEnter.value.trim();
+    const passEnterValue = passEnter.value.trim();
+
+    if(emailEnterValue === '') {
+        setError(emailEnter, "Insira seu e-mail");
+    } else if (!isValidEmail(emailEnterValue)) {
+        setError(emailEnter, "Forneça um e-mail válido");
+    } else {
+        setSuccess(emailEnter);
+    }
+
+    if (passEnterValue === '') {
+    setError(passEnter, "Insira sua senha!");
+    } else if (passEnterValue.length < 8) {
+        setError(passEnter, "A senha tem no mínimo 8 caracteres");
+        } else {
+            setSuccess(passEnter)
         }
 
-        const validateInputs = () => {
-            const emailEnterValue = emailEnter.value.trim();
-            const passEnterValue = passEnter.value.trim();
-
-            if(emailEnterValue === '') {
-                setError(emailEnter, "Insira seu e-mail");
-            } else if (!isValidEmail(emailEnterValue)) {
-                setError(emailEnter, "Forneça um e-mail válido");
-            } else {
-                setSuccess(emailEnter);
+    if (emailEnterValue == "manoel.livros@email.com" && passEnterValue == "12345678") {
+        openPage();
+        } else {
+            setError(passEnter, "Usuário ou senha inválidos");
             }
+};
 
-            if (passEnterValue === '') {
-                setError(passEnter, "Insira sua senha!");
-            } else if (passEnterValue.length < 8) {
-                setError(passEnter, "A senha tem no mínimo 8 caracteres");
-            } else {
-                setSuccess(passEnter)
-            }
+const registerArea = document.getElementById("formRegister");
+const registerEmail  = document.getElementById("userEmail");
+const registerPass1 = document.getElementById("password1");
+const registerPass2 = document.getElementById("password2");
+const registerName = document.getElementById("userName");
+const registerCpf = document.getElementById("clientCpf");
+const registerRg = document.getElementById("clientRg");
+const registerBirth = document.getElementById("clientBirth");
+const registerPhone = document.getElementById("clientPhone");
+const registerCEP = document.getElementById("clientCep");
 
-            if (emailEnterValue == "manoel.livros@email.com" && passEnterValue == "12345678") {
-                openPage();
-            } else {
-                setError(passEnter, "Usuário ou senha inválidos");
-            }
-        };
+
+
+
 
 
 /*
