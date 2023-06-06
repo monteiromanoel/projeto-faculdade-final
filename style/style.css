@@ -1172,12 +1172,11 @@ button[class="searchBt"] {
     opacity: 1;
   }
 
-  button[class="searchBt"]:focus,
-input[type="search"]:focus {
+  button[class="searchBt"]:focus, input[type="search"]:focus {
   box-shadow: 0 0 3px 0 #1183d6;
   border-color: #1183d6;
   outline: none;
-}
+    }
 
 .input-control input:focus {
     outline: 0;
@@ -1197,6 +1196,4 @@ input[type="search"]:focus {
     height: 13px;
 }
 
-.input-control span {
-    color: black;
-}
+
