@@ -770,6 +770,17 @@ input[id="inputEmail"]::placeholder, input[class="inputEmail"]::placeholder, inp
     transition: 0.2s ease;
 }
 
+.registerBt2 {
+    background-color: #088178;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.2s ease;
+}
+
 .register > .signIn > form > div > button:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.093);
     font-weight: 800;
@@ -1153,6 +1164,11 @@ input[type="search"]:hover {
 
 input[type="search"]::placeholder {
     color: #bbb;
+}
+
+.fa-search {
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 button[class="searchBt"] {
